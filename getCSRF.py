@@ -45,4 +45,4 @@ y = response.text
 f = open("error.html", "a")
 f.write(y)
 f.close()
-webbrowser.open('file:///root/python/error.html')
+webbrowser.open_new_tab('error.html')
