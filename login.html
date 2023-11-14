@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hệ thống quản lý tài khoản</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-language" content="vi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Template">
+    <meta name="COPYRIGHT" content="© Template">
+    <meta name="robots" content="noodp,index,follow">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>SSO - Login page</title>
+    <!--Include CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-ed539e9babd878f3c73ccb559797adf7a9de2a4242f26426cfca710c04023541.ico" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="u3cetHz2KzvHHOUkHwVrTUywA_UCuKdo5z0ROwX9TgMUnPmgz8gBxOn0PUzaTmgpNHMr4n4LnnTrBU91kFZDOQ" />
+    
+    <link rel="stylesheet" href="/assets/teky.application-50f1effe0fdac6ee709393c9992d5ed73aad245280e7bf2b6638d313c77e8da6.css" data-turbo-track="reload" />
+    
+    <script src="/assets/application-546d7d224a54afc83e99f09041b8af8276b7ed256ca1f20ead6182f2bbdb660b.js" data-turbo-track="reload"></script>
+
+  </head>
+  <body class="pt-0">
+    <div class="log-register" id="wrapper">
+  <div class="log-wrap login-page">
+    <div class="form-wrap">
+      <div class="log-head">
+        <h1 class="log-title">Đăng nhập!</h1>
+        <span class="logo">
+          <a href="/users/sign_in?locale=vi">
+            <img alt="auth" src="/assets/teky/img/common/Teky-logo-b7b159dd83aa3a0d1a4ebf6c4f47e3c35d03ca62d6ab26753fd970d8b0509f90.svg" />
+</a>        </span>
+      </div>
+      <label class="head-label">Chào mừng!<br>Bạn đã quay trở lại</label>
+      <form class="simple_form new_user" id="devise_sign_in_form" data-turbo="false" action="/users/sign_in?locale=vi" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ABq-fBREfidZAZFr18Vzhx7qa47celXMCARDTynjXbsmXy3V19y7zYstAC7n7krkht8ZdGBUqdW6RSFHZ9skLQ" autocomplete="off" />
+        <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="WFNw7XW5Z2SMxuvjwoi9asFxB3veFifF23a6T1Px1f73uJf5xodNm6IuM4sHw74OubIvbKKlHtnXTuQBxlrYxA" />
+        <div class="form-group">
+          <div class="form-group email optional user_email"><input class="form-control string email optional" autofocus="autofocus" placeholder="Số điện thoại hoặc email" type="text" name="user[email]" id="user_email" /></div>
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="form-group">
+          <input placeholder="Mật khẩu" autocomplete="**********" class="form-control" autofocus="autofocus" type="password" name="user[password]" id="user_password" />
+          <span class="form-group-icon js-show-password"><i class="icon24-eye"></i></span>
+        </div>
+        
+        <p class="forgot-pass">
+        <a href="/users/password/new?locale=vi">Quên mật khẩu?</a>
+        </p>
+        <input type="submit" name="commit" value="Đăng nhập" class="btn btn-cmn btn-info btn-submit" data-disable-with="Đăng nhập" /></form>      <div class="login-or">
+        <span class="label-or">Hoặc đăng nhập bằng</span>
+      </div>
+      <ul class="login-other">
+  <li>
+    <form data-turbo="false" action="/users/auth/google_oauth2?locale=vi" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="DH2A5Y6-KrJg24jj5O4IpbRPNq1ghhx5EdsWR9Pn1vKst0gimZ2wazKbYQsQ-8Iqs8X5hGQ4_C3huqz0ebCcnw" autocomplete="off" />
+      <button name="button" type="submit" class="devise__social-login">
+        <img alt="auth" src="/assets/teky/img/common/login-google-6b70c9c349beb10a9025183cdc114bb6cf460075f9539d25bbad0e40a33614df.svg" />
+</button></form>  </li>
+</ul>
+<style>
+.devise__social-login {
+  border: none;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: white !important;
+  line-height: 46px;
+  height: 48px;
+  color: dimgray;
+  position: relative;
+  z-index: 1;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  cursor: pointer;
+}
+</style>
+
+      <p class="no-account">
+      Đăng nhập
+      <a class="text-link font-weight-bold" href="/users/passcode.user?locale=vi">Tài khoản học sinh</a>
+      </p>
+      <p class="no-account">
+      Bạn chưa có tài khoản?
+      <a class="text-link font-weight-bold" href="/users/sign_up?locale=vi">Đăng ký ngay</a>
+      </p>
+      <hr/>
+      <p class="no-account">
+      Bạn có tài khoản trường học đối tác của TEKY?
+      <a class="text-link font-weight-bold" href="https://teky.edu.vn/v2/login">Đăng nhập tại đây</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+    
+  </body>
+</html>
